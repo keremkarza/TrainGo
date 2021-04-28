@@ -2,21 +2,21 @@ package com.omerkagandanaci.projecttrial.View.User;
 
 import android.content.Intent;
 import android.os.Bundle;
-
-import androidx.fragment.app.Fragment;
-
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 
+import androidx.fragment.app.Fragment;
+
+import com.google.firebase.auth.FirebaseAuth;
 import com.omerkagandanaci.projecttrial.R;
 import com.omerkagandanaci.projecttrial.View.MainActivity;
 
 public class MyAccountFragment extends Fragment {
 
     Button button1, button2, button3, button4, button5;
-
+    FirebaseAuth auth;
     public MyAccountFragment() {
         // Required empty public constructor
     }
@@ -67,6 +67,8 @@ public class MyAccountFragment extends Fragment {
             public void onClick(View v) {
                 Intent intent5 = new Intent(getActivity().getApplicationContext(), MainActivity.class );
                 startActivity(intent5);
+                auth = FirebaseAuth.getInstance();
+                auth.signOut();
             }
         });
 
