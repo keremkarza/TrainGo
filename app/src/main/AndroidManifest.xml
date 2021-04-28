@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.omerkagandanaci.projecttrial">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.ProjectTrial">
+        <activity android:name=".View.User.Confirmation"></activity>
+        <activity android:name=".View.User.Payment" />
+        <activity android:name=".View.User.ChooseSeat" />
+        <activity android:name=".View.User.ListTravels" />
+        <activity android:name=".View.User.Faq" />
+        <activity android:name=".View.User.HowToUse" />
+        <activity android:name=".View.User.MyPoints" />
+        <activity android:name=".View.User.ChangePassword" />
+        <activity android:name=".View.User.AddPassenger" />
+        <activity android:name=".View.User.MyPassengers" />
+        <activity android:name=".View.User.MyInformation" />
+        <activity android:name=".View.User.CurrentTravel" />
+        <activity android:name=".View.User.OldTickets" />
+        <activity android:name=".View.User.FutureTickets" />
+        <activity android:name=".View.User.UserMainActivity" />
+        <activity android:name=".View.User.SignUpActivity" />
+        <activity android:name=".View.Manager.AddTrain" android:parentActivityName=".View.Manager.AdminMain"/>
+        <activity android:name=".View.Manager.AddDeleteRail" android:parentActivityName=".View.Manager.AdminMain"/>
+        <activity android:name=".View.Manager.AddTravel" android:parentActivityName=".View.Manager.TravelSettings"/>
+        <activity android:name=".View.Manager.AdminMain" />
+        <activity android:name=".View.Manager.ChangeTravel" android:parentActivityName=".View.Manager.TravelSettings"/>
+        <activity android:name=".View.Manager.Comments" android:parentActivityName=".View.Manager.AdminMain"/>
+        <activity android:name=".View.Manager.TravelSettings" android:parentActivityName=".View.Manager.AdminMain"/>
+
+        <activity android:name=".View.ForgotPasswordActivity" />
+        <activity android:name=".View.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
