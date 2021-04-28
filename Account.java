@@ -2,7 +2,7 @@ package com.omerkagandanaci.projecttrial.Model;
 /**
  * Account Class
  * @author Kerem Karzaoğlu
- * @version 18.04.2021
+ * @version 18.04.2021 değişiklik yapıldı
  */
 public class Account {
     //Variables
