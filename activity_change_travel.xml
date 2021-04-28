@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".View.Manager.ChangeTravel">
+    <include layout="@layout/toolbar"
+        android:id="@+id/toolbar2"/>
+
+    <EditText
+        android:id="@+id/edittext3"
+        android:layout_width="match_parent"
+        android:layout_height="40sp"
+        android:layout_below="@+id/toolbar2"
+        android:layout_marginTop="60sp"
+        android:hint="Date/Time:"
+        android:textColorHint="@color/purple_500"
+        android:background="#FAF4F4"
+        android:layout_marginRight="60sp"/>
+    <Button
+        android:id="@+id/savebutton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="25sp"
+        android:layout_alignParentBottom="true"
+        android:text="Save"
+        android:backgroundTint="@color/GREEN"
+        android:layout_marginBottom="20sp"/>
+    <TextView
+        android:id="@+id/textview1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Available Trains"
+        android:textColor="@color/purple_500"
+        android:layout_below="@+id/edittext3"
+        android:layout_marginTop="45sp"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerview"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/textview1"
+        android:layout_above="@id/savebutton"/>
+
+
+
+
+
+
+
+</RelativeLayout>
