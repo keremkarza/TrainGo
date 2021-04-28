@@ -1,34 +1,16 @@
-package com.omerkagandanaci.projecttrial.Model;
-/**
- * Faq Class
- * @author Ömer Kağan Danacı
- * @version 18.04.2021
- */
-public class Faq {
-    //Variables
-    private String question;
-    private String answer;
+package com.omerkagandanaci.projecttrial.View.User;
 
-    //Constructor
-    public Faq(String question, String answer) {
-        this.question = question;
-        this.answer = answer;
-    }
+import androidx.appcompat.app.AppCompatActivity;
 
-    //Methods
-    public String getQuestion() {
-        return question;
-    }
+import android.os.Bundle;
 
-    public void setQuestion(String question) {
-        this.question = question;
-    }
+import com.omerkagandanaci.projecttrial.R;
 
-    public String getAnswer() {
-        return answer;
-    }
+public class Faq extends AppCompatActivity {
 
-    public void setAnswer(String answer) {
-        this.answer = answer;
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_faq);
     }
 }
